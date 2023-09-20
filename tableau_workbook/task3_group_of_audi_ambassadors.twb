@@ -1,0 +1,509 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='CAR DETAILS FROM CAR DEKHO' inline='true' name='federated.0yhvno2149nw9c1a8wich0snbbxe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CAR DETAILS FROM CAR DEKHO' name='textscan.0dtycwm0y7e6cl11vflgv1r24vpo'>
+            <connection class='textscan' directory='C:/Users/saran/Downloads/All data used in tableau - Copy (2)/Assignment data' filename='CAR DETAILS FROM CAR DEKHO.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0dtycwm0y7e6cl11vflgv1r24vpo' name='CAR DETAILS FROM CAR DEKHO.csv' table='[CAR DETAILS FROM CAR DEKHO#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='integer' name='selling_price' ordinal='2' />
+            <column datatype='integer' name='km_driven' ordinal='3' />
+            <column datatype='string' name='fuel' ordinal='4' />
+            <column datatype='string' name='seller_type' ordinal='5' />
+            <column datatype='string' name='transmission' ordinal='6' />
+            <column datatype='string' name='owner' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0dtycwm0y7e6cl11vflgv1r24vpo' name='CAR DETAILS FROM CAR DEKHO.csv' table='[CAR DETAILS FROM CAR DEKHO#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='integer' name='selling_price' ordinal='2' />
+            <column datatype='integer' name='km_driven' ordinal='3' />
+            <column datatype='string' name='fuel' ordinal='4' />
+            <column datatype='string' name='seller_type' ordinal='5' />
+            <column datatype='string' name='transmission' ordinal='6' />
+            <column datatype='string' name='owner' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selling_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[selling_price]</local-name>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias>selling_price</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>km_driven</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[km_driven]</local-name>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias>km_driven</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fuel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fuel]</local-name>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias>fuel</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seller_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[seller_type]</local-name>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias>seller_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transmission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transmission]</local-name>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias>transmission</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>owner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[owner]</local-name>
+            <parent-name>[CAR DETAILS FROM CAR DEKHO.csv]</parent-name>
+            <remote-alias>owner</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Name (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[name]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Ambassador&quot;'>
+            <value>&quot;Ambassador CLASSIC 1500 DSL AC&quot;</value>
+            <value>&quot;Ambassador Classic 2000 Dsz&quot;</value>
+            <value>&quot;Ambassador Grand 1800 ISZ MPFI PW CL&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Audi&quot;'>
+            <value>&quot;Audi A4 1.8 TFSI&quot;</value>
+            <value>&quot;Audi A4 2.0 TDI&quot;</value>
+            <value>&quot;Audi A4 2.0 TDI 177 Bhp Premium Plus&quot;</value>
+            <value>&quot;Audi A4 3.0 TDI Quattro&quot;</value>
+            <value>&quot;Audi A4 30 TFSI Technology&quot;</value>
+            <value>&quot;Audi A4 35 TDI Premium&quot;</value>
+            <value>&quot;Audi A4 35 TDI Premium Plus&quot;</value>
+            <value>&quot;Audi A4 New  2.0 TDI Multitronic&quot;</value>
+            <value>&quot;Audi A5 Sportback&quot;</value>
+            <value>&quot;Audi A6 2.0 TDI  Design Edition&quot;</value>
+            <value>&quot;Audi A6 2.0 TDI Premium Plus&quot;</value>
+            <value>&quot;Audi A6 2.7 TDI&quot;</value>
+            <value>&quot;Audi A6 2.8 FSI&quot;</value>
+            <value>&quot;Audi A8 4.2 TDI&quot;</value>
+            <value>&quot;Audi A8 L 3.0 TDI quattro&quot;</value>
+            <value>&quot;Audi Q3 2.0 TDI Quattro Premium Plus&quot;</value>
+            <value>&quot;Audi Q3 35 TDI Quattro Technology&quot;</value>
+            <value>&quot;Audi Q5 2.0 TDI&quot;</value>
+            <value>&quot;Audi Q5 2.0 TFSI Quattro&quot;</value>
+            <value>&quot;Audi Q5 2.0 TFSI Quattro Premium Plus&quot;</value>
+            <value>&quot;Audi Q5 3.0 TDI Quattro Technology&quot;</value>
+            <value>&quot;Audi Q7 35 TDI Quattro Premium&quot;</value>
+            <value>&quot;Audi RS7 2015-2019 Sportback Performance&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='CAR DETAILS FROM CAR DEKHO.csv' datatype='table' name='[__tableau_internal_object_id__].[CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801]' role='measure' type='quantitative' />
+      <column caption='Fuel' datatype='string' name='[fuel]' role='dimension' type='nominal' />
+      <column caption='Km Driven' datatype='integer' name='[km_driven]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Owner' datatype='string' name='[owner]' role='dimension' type='nominal' />
+      <column caption='Seller Type' datatype='string' name='[seller_type]' role='dimension' type='nominal' />
+      <column caption='Selling Price' datatype='integer' name='[selling_price]' role='measure' type='quantitative' />
+      <column caption='Transmission' datatype='string' name='[transmission]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CAR DETAILS FROM CAR DEKHO.csv' id='CAR DETAILS FROM CAR DEKHO.csv_A9D0E5A8278746C8A0994BFCCADAE801'>
+            <properties context=''>
+              <relation connection='textscan.0dtycwm0y7e6cl11vflgv1r24vpo' name='CAR DETAILS FROM CAR DEKHO.csv' table='[CAR DETAILS FROM CAR DEKHO#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='integer' name='selling_price' ordinal='2' />
+                  <column datatype='integer' name='km_driven' ordinal='3' />
+                  <column datatype='string' name='fuel' ordinal='4' />
+                  <column datatype='string' name='seller_type' ordinal='5' />
+                  <column datatype='string' name='transmission' ordinal='6' />
+                  <column datatype='string' name='owner' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='task 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CAR DETAILS FROM CAR DEKHO' name='federated.0yhvno2149nw9c1a8wich0snbbxe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yhvno2149nw9c1a8wich0snbbxe'>
+            <column datatype='string' name='[Name (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[name]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Ambassador&quot;'>
+                  <value>&quot;Ambassador CLASSIC 1500 DSL AC&quot;</value>
+                  <value>&quot;Ambassador Classic 2000 Dsz&quot;</value>
+                  <value>&quot;Ambassador Grand 1800 ISZ MPFI PW CL&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Audi&quot;'>
+                  <value>&quot;Audi A4 1.8 TFSI&quot;</value>
+                  <value>&quot;Audi A4 2.0 TDI&quot;</value>
+                  <value>&quot;Audi A4 2.0 TDI 177 Bhp Premium Plus&quot;</value>
+                  <value>&quot;Audi A4 3.0 TDI Quattro&quot;</value>
+                  <value>&quot;Audi A4 30 TFSI Technology&quot;</value>
+                  <value>&quot;Audi A4 35 TDI Premium&quot;</value>
+                  <value>&quot;Audi A4 35 TDI Premium Plus&quot;</value>
+                  <value>&quot;Audi A4 New  2.0 TDI Multitronic&quot;</value>
+                  <value>&quot;Audi A5 Sportback&quot;</value>
+                  <value>&quot;Audi A6 2.0 TDI  Design Edition&quot;</value>
+                  <value>&quot;Audi A6 2.0 TDI Premium Plus&quot;</value>
+                  <value>&quot;Audi A6 2.7 TDI&quot;</value>
+                  <value>&quot;Audi A6 2.8 FSI&quot;</value>
+                  <value>&quot;Audi A8 4.2 TDI&quot;</value>
+                  <value>&quot;Audi A8 L 3.0 TDI quattro&quot;</value>
+                  <value>&quot;Audi Q3 2.0 TDI Quattro Premium Plus&quot;</value>
+                  <value>&quot;Audi Q3 35 TDI Quattro Technology&quot;</value>
+                  <value>&quot;Audi Q5 2.0 TDI&quot;</value>
+                  <value>&quot;Audi Q5 2.0 TFSI Quattro&quot;</value>
+                  <value>&quot;Audi Q5 2.0 TFSI Quattro Premium Plus&quot;</value>
+                  <value>&quot;Audi Q5 3.0 TDI Quattro Technology&quot;</value>
+                  <value>&quot;Audi Q7 35 TDI Quattro Premium&quot;</value>
+                  <value>&quot;Audi RS7 2015-2019 Sportback Performance&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[selling_price]' derivation='Avg' name='[avg:selling_price:qk]' pivot='key' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column caption='Selling Price' datatype='integer' name='[selling_price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0yhvno2149nw9c1a8wich0snbbxe].[Name (group)]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0yhvno2149nw9c1a8wich0snbbxe].[avg:selling_price:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yhvno2149nw9c1a8wich0snbbxe].[avg:selling_price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yhvno2149nw9c1a8wich0snbbxe].[avg:selling_price:qk]</rows>
+        <cols>[federated.0yhvno2149nw9c1a8wich0snbbxe].[Name (group)]</cols>
+      </table>
+      <simple-id uuid='{038C9026-647D-4CB4-BE15-A0673E359E44}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='task 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yhvno2149nw9c1a8wich0snbbxe].[Name (group)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0952A92E-D08A-4572-B89B-32EB37DA0B1B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='288' name='task 3' width='288'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
